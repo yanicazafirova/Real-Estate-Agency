@@ -1,0 +1,27 @@
+{
+  "name": "real-estate-agency",
+  "version": "1.0.0",
+  "description": "Real-Estate-Agency-Softuni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanicazafirova/Real-Estate-Agency.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanicazafirova/Real-Estate-Agency/issues"
+  },
+  "homepage": "https://github.com/yanicazafirova/Real-Estate-Agency#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "jsonwebtoken": "^9.0.0"
+  }
+}
