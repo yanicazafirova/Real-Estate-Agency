@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- Do not forget to change the path to the css file -->
     <title>Home Page</title>
-    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,27 +15,27 @@
         <!-- In case of error, you should display div with class "errorContainer" -->
         <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
 
-        <!--<div>
-            <div class="errorContainer">
-                <p>Error</p>
-            </div>
-        </div>-->
+        {{#if error}}
+        <div class="errorContainer">
+            <p>{{error}}</p>
+        </div>
+        {{/if}}
 
         <nav>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
             <ul>
                 <!-- Guest users and Logged users -->
                 <li><a href="#">Housing for rent</a></li>
                 <!-- Guest users -->
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="/auth/login">Login</a></li>
+                <li><a href="/auth/register">Register</a></li>
                 <!-- Logged users -->
                 <li><a href="#">Create offer</a></li>
                 <li><a href="#">Search</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="/auth/logout">Logout</a></li>
             </ul>
         </nav>
-
+        {{{body}}}
         <footer>
             © 2021
         </footer>
