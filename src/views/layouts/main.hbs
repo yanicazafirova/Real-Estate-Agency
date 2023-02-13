@@ -25,11 +25,11 @@
             <a href="/">Home</a>
             <ul>
                 <!-- Guest users and Logged users -->
-                <li><a href="#">Housing for rent</a></li>
+                <li><a href="/houstings/for-rent">Housing for rent</a></li>
                 <!-- Logged users -->
                 {{#if user}}
-                <li><a href="#">Create offer</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a href="/houstings/create">Create offer</a></li>
+                <li><a href="/houstings/search">Search</a></li>
                 <li><a href="/auth/logout">Logout</a></li>
                 {{else}}
                 <!-- Guest users -->

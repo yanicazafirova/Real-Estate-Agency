@@ -19,7 +19,10 @@ router.post('/register', async (req, res) => {
     }
 
     try {
-        await authService.register({ name, username, password });
+        const user = await authService.register({ name, username, password });
+        const token = await authService.getSession(user);
+        //TODO: Should add token
+        res.cookie(AUTH_COOKI_NAME, token, { httpOnly: true });
 
         res.redirect('/');
     } catch (error) {
